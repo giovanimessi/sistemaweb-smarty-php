@@ -2,14 +2,14 @@
 
     <div class="panel panel-primary ">
         <div class="panel panel-heading active">
-            <center><b>Editar Usuario</b></center>
+            <center><b>Editar Funcionario</b></center>
         </div>
         <div class="panel-body width= '95%'">
             <form name="adicionar_usuario" method="POST">
                 <div class="form-group">
                     <div class="form-group">
                         <span class="input-group-addon">
-                            <input type="hidden" name="id_usuario" id="id_usuario" value={$id_usuario}>
+                            <input type="hidden" name="id_func" id="id_func" value="{$id_func}">
 
 
                         </span>
@@ -26,29 +26,29 @@
                 <div class="form-group">
                     <div class="input-group">
                         <span class="input-group-addon">
-                            Nome Usuário &nbsp&nbsp
+                            CPF &nbsp&nbsp
                         </span>
-                        <input type="text" name="usuario" id="usuario" placeholder="insira o usuario"
-                            class="form-control" value="{$usuario}" required>
+                        <input type="text" name="cpf" id="cpf" placeholder="insira o cpf"
+                            class="form-control" value="{$cpf}" required>
                     </div>
 
                 </div>
                 <div class="form-group">
                     <div class="input-group">
                         <span class="input-group-addon">
-                            Senha:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            Endereço:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                         </span>
-                        <input type="password" name="senha" id="senha" placeholder="insira a senha" class="form-control"
-                            value="{$senha}" required>
+                        <input type="text" name="endreco" id="endreco" placeholder="insira o endereço" class="form-control"
+                            value="{$endreco}" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="input-group">
                         <span class="input-group-addon">
-                            Confirmar Senha:
+                            Telefone:
                         </span>
-                        <input type="password" name="confirma_Senha" id="confirma_Senha" placeholder="confirme a senha"
-                            class="form-control" value="{$confirmaSenha}" required>
+                        <input type="text" name="telefone" id="telefone" placeholder="telefone"
+                            class="form-control" value="{$telefone}" required>
                     </div>
                    
                 </div>

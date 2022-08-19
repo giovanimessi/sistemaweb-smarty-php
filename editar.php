@@ -10,10 +10,10 @@ $conectar = conectar();
 $alerta = '';
 if($_POST){
 	$id_usuario = $_POST["id_usuario"];
-	$nome_completo = $_POST["nome_completo"];
-	$usuario = $_POST["usuario"];
-	$senha = $_POST["senha"];
-	$confirmaSenha = $_POST["confirma_Senha"];
+	$nome_completo = addslashes($_POST['nome_completo']);
+    $usuario = addslashes($_POST['usuario']);
+    $senha = md5($_POST['senha']);
+    $confirmaSenha = md5($_POST['confirma_Senha']);
 
 	if($senha != $confirmaSenha){
 		echo "<script>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.1, created on 2022-08-19 18:39:44
-  from 'C:\xampp\htdocs\www\SistemaWeb\templates\editar.tpl' */
+/* Smarty version 4.1.1, created on 2022-08-19 19:06:59
+  from 'C:\xampp\htdocs\www\SistemaWeb\templates\editar_funcionario.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.1',
-  'unifunc' => 'content_62ffbcd0dfc526_55646984',
+  'unifunc' => 'content_62ffc333d67023_15293270',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'cc0a3d96d6daf80f6f8b38b4e24697badb344972' => 
+    'ccb95e5c1e86049b45c11a41feb1a84e2534a982' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\www\\SistemaWeb\\templates\\editar.tpl',
-      1 => 1660926665,
+      0 => 'C:\\xampp\\htdocs\\www\\SistemaWeb\\templates\\editar_funcionario.tpl',
+      1 => 1660928816,
       2 => 'file',
     ),
   ),
@@ -20,20 +20,20 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62ffbcd0dfc526_55646984 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62ffc333d67023_15293270 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="default col-md-9 mb-5">
 
     <div class="panel panel-primary ">
         <div class="panel panel-heading active">
-            <center><b>Editar Usuario</b></center>
+            <center><b>Editar Funcionario</b></center>
         </div>
         <div class="panel-body width= '95%'">
             <form name="adicionar_usuario" method="POST">
                 <div class="form-group">
                     <div class="form-group">
                         <span class="input-group-addon">
-                            <input type="hidden" name="id_usuario" id="id_usuario" value=<?php echo $_smarty_tpl->tpl_vars['id_usuario']->value;?>
->
+                            <input type="hidden" name="id_func" id="id_func" value="<?php echo $_smarty_tpl->tpl_vars['id_func']->value;?>
+">
 
 
                         </span>
@@ -51,10 +51,10 @@ function content_62ffbcd0dfc526_55646984 (Smarty_Internal_Template $_smarty_tpl)
                 <div class="form-group">
                     <div class="input-group">
                         <span class="input-group-addon">
-                            Nome Usuário &nbsp&nbsp
+                            CPF &nbsp&nbsp
                         </span>
-                        <input type="text" name="usuario" id="usuario" placeholder="insira o usuario"
-                            class="form-control" value="<?php echo $_smarty_tpl->tpl_vars['usuario']->value;?>
+                        <input type="text" name="cpf" id="cpf" placeholder="insira o cpf"
+                            class="form-control" value="<?php echo $_smarty_tpl->tpl_vars['cpf']->value;?>
 " required>
                     </div>
 
@@ -62,20 +62,20 @@ function content_62ffbcd0dfc526_55646984 (Smarty_Internal_Template $_smarty_tpl)
                 <div class="form-group">
                     <div class="input-group">
                         <span class="input-group-addon">
-                            Senha:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            Endereço:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                         </span>
-                        <input type="password" name="senha" id="senha" placeholder="insira a senha" class="form-control"
-                            value="<?php echo $_smarty_tpl->tpl_vars['senha']->value;?>
+                        <input type="text" name="endreco" id="endreco" placeholder="insira o endereço" class="form-control"
+                            value="<?php echo $_smarty_tpl->tpl_vars['endreco']->value;?>
 " required>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="input-group">
                         <span class="input-group-addon">
-                            Confirmar Senha:
+                            Telefone:
                         </span>
-                        <input type="password" name="confirma_Senha" id="confirma_Senha" placeholder="confirme a senha"
-                            class="form-control" value="<?php echo $_smarty_tpl->tpl_vars['confirmaSenha']->value;?>
+                        <input type="text" name="telefone" id="telefone" placeholder="telefone"
+                            class="form-control" value="<?php echo $_smarty_tpl->tpl_vars['telefone']->value;?>
 " required>
                     </div>
                    
