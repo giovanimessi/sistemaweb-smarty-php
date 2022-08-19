@@ -26,6 +26,10 @@ if ($_GET['ac'] && $_GET['ac'] == 'adicionar_usuario') {
     include("excluir.php");
 
 
+} else if ($_GET["ac"] && $_GET["ac"] == "relatorio") {
+    include("relatorio.php");
+
+
 } else if (!isset($_SESSION['usuario'])) {
     include("login.php");
 }
